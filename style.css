@@ -67,6 +67,13 @@ body {
   left: 20px;
   text-align: left;
 }
+.about-hero-text {
+  position: relative;
+  max-width: none !important;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
 .exhib-hero-text {
   position: relative;
   max-width: none !important;
