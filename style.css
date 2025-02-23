@@ -1,6 +1,9 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 body {
   display: flex;
@@ -26,12 +29,13 @@ body {
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh !important;
 }
 
 .content-wrap {
   flex-grow: 1 !important;
-  flex: 1 0 auto;
+  flex: 1 ;
+  flex-direction: column;
 }
 .navbar {
   background-color: #13122b !important;
@@ -58,11 +62,18 @@ body {
 }
 .hero-text {
   position: absolute;
+  max-width: none !important;
   top: 20px;
   left: 20px;
   text-align: left;
 }
-
+.exhib-hero-text {
+  position: relative;
+  max-width: none !important;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
 h1 {
   font-size: 4vw;
   font-family: 'Raleway', sans-serif;
@@ -102,9 +113,11 @@ footer {
   padding: 1rem;
   text-align: left;
   color: white;
-  position: static;
+  position: relative;
   width: 100%;
   flex-shrink: 0; /* Prevents the footer from shrinking */
+  clear: both; /* Forces it to move below floated elements */
+  /*border: 2px solid red; / Debugging - See where the footer is */
 }
 
 .contact-link {
@@ -168,6 +181,27 @@ margin-bottom: 0.5rem;
 font-size: 1rem;
 line-height: 1.5;
 }
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 70%; /* Adjust width as needed */
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.about-image {
+    width: 80%; /* Adjust image size */
+    max-width: 350px; /* Optional: Ensures the image doesn't get too big */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.about-text {
+    flex: 1; /* Allows text to fill remaining space */
+    max-width: 80%; /* Ensures the text expands properly */
+}
+
 
 .artwork-container {
   display: relative;
