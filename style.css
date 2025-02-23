@@ -190,7 +190,7 @@ line-height: 1.5;
 }
 
 .about-content {
-    display: absolute;
+    display: flex;
     align-items: center;
     max-width: 70%; /* Adjust width as needed */
     margin: 0 auto;
@@ -198,7 +198,7 @@ line-height: 1.5;
 }
 
 .about-image {
-    width: 80%; /* Adjust image size */
+    width: 60%; /* Adjust image size */
     max-width: 350px; /* Optional: Ensures the image doesn't get too big */
     margin-right: 20px; /* Space between image and text */
     border-radius: 10px; /* Optional: Adds rounded corners */
